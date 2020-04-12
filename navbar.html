@@ -1,0 +1,64 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Bank of Joruno</title>
+    <link href="https://fonts.googleapis.com/css?family=Sulphur+Point&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
+	<link href="../static/nav-mobile.css" media="screen and (max-aspect-ratio: 5/6)" rel="stylesheet">
+	<link href="../static/nav.css" media="screen and (min-aspect-ratio: 5/6)" rel="stylesheet">
+	<link rel="shortcut icon" href="../static/images/favicon.ico">
+</head>
+<body>
+		
+		<div class="navbar" id="nav">
+			<ul class="nav">
+				<li id="home" class="active"><a href="../index.html" style=" font-style:bold; font-family:'Sulphur Point', sans-serif;"><img src="../static/images/giorno_minimal_icon.png" height="60px" width="60px"></a></li>
+				<li id="home" style="padding-top:12px;"><a href="../index.html">Toasted Robotics</a></li>
+				<a href="javascript:void(0);" class="icon" onclick="myFunction()"><img src="https://cdn.discordapp.com/attachments/642547206275989527/665023672775606323/LcK7kdpki.png" width="20px" height="20px"></a>
+				<div id="mobile">
+					<div id="left">
+						<li id="mobile"><a href="../pages/about.html">About Us</a></li>
+						<li id="mobile"><a href="../pages/contact.html">Contact</a></li>	
+					</div>
+					<div id="right">
+						<button id="login-nav" style="margin-top: 18px; float:right; margin-right: 20%; background-color: white;" onclick="removeHide()">Account</button>
+					</div>
+				</div>
+			</ul> 
+		</div>
+		<script>
+			function myFunction() {
+			  var x = document.getElementById("mobile");
+			  if (x.style.display === "block") {
+				x.style.display = "none";
+			  } else {
+				x.style.display = "block";
+			  }
+			}
+			function myAccount() {
+				window.location = "../pages/account.html"
+			}
+			const auth = firebase.auth();
+			const showAccount = document.getElementById("myAccount");
+			auth.onAuthStateChanged(user =>{
+				if(user){
+					showAccount.classList.remove("hide");
+				}
+				else{
+					showAccount.class.add("hide");
+				}
+			})
+			function minimize(){
+				var nav = getElementById("nav");
+				if (document.body.scrollTop > 50){
+					nav.class.add("minimize");
+				}
+			}
+			object.onscroll = function(){
+
+			};
+		</script>
+</body>
+</html>

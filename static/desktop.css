@@ -1,0 +1,142 @@
+body{
+    font-family: 'Ubuntu', sans-serif;
+    text-align: center;
+    width:auto;
+}
+.hide{
+    display:none !important;
+}
+.wrapper{
+    display:grid;
+    grid-template-columns: 1fr 5fr 1fr;
+    grid-auto-rows: minmax(77px, auto);
+    grid-template-rows: 120px 1fr 600px 1fr;
+    
+}
+#page-mask {
+    background: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    cursor: pointer;
+  }
+.content > div:nth-child(3){
+    background-color: rgb(255, 248, 239);
+}
+.content{
+    grid-row:3;
+    grid-column: 1/4;
+    grid-template-columns: 2fr 2fr;
+    display: grid;
+    font-family: "Ubuntu", sans-serif;
+}
+.foot{
+    grid-column: 1/4;
+    grid-row: 4;
+}
+.footer{
+    grid-row:4;
+    grid-column: 1/4;
+    width: 100%;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    display: grid;
+    grid-column-gap: 15px;
+    margin: 0 auto;
+    margin-top: 20px;
+    padding-top: 30px;
+    padding-bottom: 10px;
+    background-color: rgba(250, 250, 250, 0.685);
+}
+.footer-spacer{
+    grid-column: 2/6;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    display: grid;
+}
+#footer > h3{
+    font-size: 16px;
+}
+#footer{
+    font-size: 14px;
+    width: 300px;
+    margin: 0 auto;
+}
+.header{
+    grid-row: 1;
+    grid-column: 1/4;
+    background-color: rgba(221, 221, 221, 0.1);
+    text-align: center;
+    margin:0 auto;  
+    width:100%;
+}
+#background, #firebaseui-auth-container{
+    grid-row: 3;
+    grid-column: 2;
+}
+.navbar {
+    grid-column: 1/4;
+    grid-row: 1;
+}
+.welcome{
+    grid-row: 2;
+    grid-column: 2;
+}
+#login-modal{
+    grid-row: 3;   
+    grid-column: 2;
+    height:300px;
+    width:100%;
+    position: absolute;
+    left:0;
+    right:0;
+    top:350px;
+    z-index: 100;
+}
+input{
+    border:none;
+    border-bottom: 2px solid rgba(98, 166, 255, 0.801);
+    width: 80%;
+    height: 40px;
+    font-size: 20px;
+}
+input:focus{
+    border-bottom: 4px solid rgba(98, 166, 255, 0.801);
+    outline:none;
+    padding-left: 5px;
+    padding-right: 5px;
+    transition: all 0.3s ease 0s;
+}
+input::placeholder{
+    font-size: 15px;
+}
+input:focus::placeholder{
+    font-size: 20px;
+    color:rgb(82, 157, 255);
+    transition: all 0.45s ease 0s;
+}
+#input {
+    grid-row: 2;
+    grid-column: 1;
+}
+#input2{
+    grid-row:3;
+}
+#actions {
+    grid-row: 4;
+}
+button{
+    height:auto;
+    width:auto;
+    padding: 9px 16px;
+    background-color: rgb(221, 221, 221);
+    border: none;
+    display: inline-block;
+    cursor: pointer;
+}
+button:hover{
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.24), 0 4px 4px 0 rgba(0,0,0,0.19);
+}
+button:focus {
+    outline: none;
+}

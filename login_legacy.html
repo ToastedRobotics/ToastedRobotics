@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en" style="grid-template-columns: 1fr 4fr 1fr; display: grid;">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <meta http-equiv="X-UA-Compatible" content="ie=edge"> -->
+    <title>Login | Bank of Joruno</title>
+    <!-- <link href="./static/portable.css" media="screen and (max-aspect-ratio: 5/6)" rel="stylesheet"> -->
+	<link href="./static/desktop.css" media="screen and (min-aspect-ratio: 5/6)" rel="stylesheet">
+	<!-- <link rel="shortcut icon" href="../static/images/icon.ico"> -->
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.7.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.7.0/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.7.0/firebase-auth.js"></script>
+    <script src="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.js"></script>
+    <link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.css" />
+    <script src="./static/firebase.js"></script>
+    <script src="./static/legacy.js"></script>
+    <!-- <script>
+		$(function(){
+ 		$(".navbar").load("../navbar.html");
+		});
+    </script> -->
+</head>
+<body style=" max-height: 500px; max-width: 500px; box-shadow: 0px 5px 5px 0px rgba(196, 196, 196, 0.705); grid-column: 2; margin: 0 auto; width: 100%;">
+    <div style="grid-template-rows: 1fr 1fr 1fr; grid-auto-rows: minmax(67px, auto); grid-gap:1px; display:grid; grid-template-columns: 1fr; background-color: white;">
+        <div style="grid-row: 1;"><h2>Account Management</h2></div>
+        <div id="input">
+            <input id="txtEmail" type="email" required placeholder=" email">
+        </div>
+        <div style="grid-row: 2; grid-column: 1;"><h2 id="user" class="hide"></h2></div>
+        <div id="input2">
+            <input id="txtPassword" name="password" type="password" placeholder=" password">
+        </div>
+        <div id="actions">
+            <button id="btnLogin" onclick="btnLogin" type="submit">Login</button>
+            <button id="btnSignUp">Sign Up</button>
+            <button id="btnLogOut" class="hide">Log Out</button>
+            <button id="btnReset">Forgot Password</button>
+        </div>
+    </div>
+    <div id="resetPass" class="hide" style="grid-template-rows: 1fr 1fr; display: grid;">
+        <div>
+            <h2>Reset Password</h2>
+            <input type="email" id="resetEmail" required placeholder=" email">
+        </div>
+        <div>
+            <button id="resetSubmit" style="margin-top: 15px; font-size: 15px;">Submit</button>
+            <p id="confirmation" style="font-size: 10px;"></p>
+        </div>
+    </div>
+    <script>
+        var input = document.getElementById("txtPassword");
+
+        // Execute a function when the user releases a key on the keyboard
+        input.addEventListener("keyup", function(event) {
+        // Number 13 is the "Enter" key on the keyboard
+        if (event.keyCode === 13) {
+            // Cancel the default action, if needed
+            event.preventDefault();
+            // Trigger the button element with a click
+            document.getElementById("btnLogin").click();
+        }
+        });
+    </script>
+</body>
+</html>
