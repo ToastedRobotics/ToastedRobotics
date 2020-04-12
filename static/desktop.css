@@ -33,6 +33,15 @@ body{
     display: grid;
     font-family: "Ubuntu", sans-serif;
 }
+#competitive{
+    position: relative;
+    animation: movement 3s infinite;
+}
+@keyframes movement{
+    0% {top:0px;}
+    50% {top:30px;}
+    100% {top:0px;}
+}
 .foot{
     grid-column: 1/4;
     grid-row: 4;
