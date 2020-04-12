@@ -35,12 +35,16 @@ body{
 }
 #competitive{
     position: relative;
+    /* animation: movement 4s infinite; */
+}
+#floating {
+    position: relative;
     animation: movement 3s infinite;
 }
 @keyframes movement{
-    0% {top:0px;}
-    50% {top:30px;}
-    100% {top:0px;}
+    0% {top:0px;right:0px;}
+    50% {top:10px;right:10px;}
+    100% {top:0px;right:0px;}
 }
 .foot{
     grid-column: 1/4;
