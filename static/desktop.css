@@ -121,7 +121,6 @@ body{
     0% {top:-100px; display: hidden;}
     20% {top:-100px; display: hidden;}
     100% {top:0px; display: grid;}
-    }
 }
 #login-modal{
     grid-row: 3;   
