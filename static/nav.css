@@ -19,12 +19,12 @@ li#mobile a {
 	display: block;
 	color: rgb(163, 163, 163);
   text-align: center;
-  margin-top: 12px;
+  margin-top: 9px;
 	padding: 14px 20px;
   text-decoration: none !important;
   background-color:rgb(0, 0, 0);
   font-family: 'Ubuntu', sans-serif;
-  font-size: 20px;
+  font-size: 18px;
   color:rgb(255, 255, 255);
 }
 li#home a {
@@ -36,7 +36,7 @@ li#home a {
   text-decoration: none !important;
   background-color:rgb(0, 0, 0);
   font-family: 'Ubuntu', sans-serif;
-  font-size: 35px;
+  font-size: 30px;
   color:rgb(255, 255, 255);
   font-weight: bold;
 }
