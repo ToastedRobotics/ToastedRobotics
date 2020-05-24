@@ -92,10 +92,15 @@ body{
     position: relative;
     /* animation: movement 4s infinite; */
 }
-/* #floating {
-    position: relative;
-    animation: movement 3s infinite;
-} */
+#floating > img{
+    /* position: relative;
+    animation: movement 3s infinite; */
+    max-width: 300px;
+    height: auto; 
+
+    margin-top:100px; 
+    /* box-shadow: 10px 10px 2px 1px rgba(0, 0, 0, 0.603); */
+}
 @keyframes movement{
     0% {right:0px;top:0px;}
     50% {right:10px;top:10px;}
