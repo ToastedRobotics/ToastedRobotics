@@ -22,17 +22,32 @@
     <script src="./static/main.js"></script>
     <script>
         window.addEventListener('load', function loader(){
-            console.log("hi");
+            console.log("loaded");
+            console.time("Load Time");
             const preload = document.getElementById("preload");
+            const mask = document.getElementById("mask");
             const wrapper = document.getElementById("wrapper");
-            preload.classList.add("hide");
-            wrapper.classList.remove("hide");
+            function checkLoadState(){
+                if(document.readyState ==="complete"){
+                    preload.classList.add("hide");
+                    mask.classList.add("displayup");
+                    setTimeout(hideMask,500);
+                    function hideMask(){
+                        mask.classList.add("hide");
+                    }
+                   
+                    console.log("complete")
+                    console.timeEnd("Load Time");
+             }
+            }
+            setTimeout(checkLoadState, 500);
         })
     </script>
 </head>
 <body>
     <div id="preload"></div>
-    <div class="wrapper hide" id="wrapper">
+    <div id="mask"></div>
+    <div class="wrapper" id="wrapper">
         <div id="login-modal" class="hide">
             <iframe src="./login_legacy.html" frameBorder="0" id="frame" scrolling="no" width="100%" style="height:100%; width: 710px;"></iframe>
         </div>

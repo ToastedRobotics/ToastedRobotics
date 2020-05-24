@@ -9,29 +9,55 @@ body{
 }
 #preload {
     position: absolute;
+    background-image: url("../static/images/logo.svg");
+    background-repeat: no-repeat;
+    background-size: 30%;
     left: 50%;
     top: 50%;
-    z-index: 1;
-    width: 150px;
-    height: 150px;
+    z-index: 2;
     margin: -75px 0 0 -75px;
-    border: 13px solid #f3f3f3;
-    border-radius: 50%;
-    border-top: 16px solid #069cff;
-    width: 120px;
-    height: 120px;
+    /* border: 20px solid #f3f3f3;
+    border-top: 16px solid #069cff; */
+    width: 25%;
+    height: 25%;
     -webkit-animation: spin 1.5s linear infinite;
     animation: spin 1.5s linear infinite;
 }
-  
+#mask{
+    z-index: 1;
+    position: absolute;
+    background: rgb(255, 255, 255);
+    top:0;
+    right:0;
+    left:0;
+    bottom:0;
+}
+.displayup{
+    -webkit-animation-name: animatehide;
+    -webkit-animation-duration: 1s;
+    animation-name: animatehide;
+    animation-duration: 1s
+}
 @-webkit-keyframes spin {
     0% { -webkit-transform: rotate(0deg); }
     100% { -webkit-transform: rotate(360deg); }
 }
   
 @keyframes spin {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
+    0% { opacity: 1; }
+    25% { opacity: 0;}
+    50% { opacity: 1;}
+    75% { opacity: 0;}
+    100% { opacity: 1;}
+}
+@-webkit-keyframes animatehide {
+    from { opacity:1 } 
+    to { opacity:0 }
+}
+  
+@keyframes animatehide { 
+    from{ opacity:1 } 
+    to{ opacity:0 }
 }
 
 .wrapper{
@@ -137,7 +163,7 @@ body{
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
     /* border-radius: 60px 0 60px 0; */
     color: white;
-    font-family: "Ubuntu",sans-serif, monospace;
+    font-family: sans-serif, monospace;
     font-size: 30px;
     grid-column: 2;
     height:180px;
