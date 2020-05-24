@@ -7,6 +7,33 @@ body{
 .hide{
     display:none !important;
 }
+#preload {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    z-index: 1;
+    width: 150px;
+    height: 150px;
+    margin: -75px 0 0 -75px;
+    border: 13px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 16px solid #069cff;
+    width: 120px;
+    height: 120px;
+    -webkit-animation: spin 1.5s linear infinite;
+    animation: spin 1.5s linear infinite;
+}
+  
+@-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+}
+  
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
 .wrapper{
     display:grid;
     grid-auto-rows: minmax(77px, auto);
@@ -110,7 +137,7 @@ body{
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
     /* border-radius: 60px 0 60px 0; */
     color: white;
-    font-family: "Ubuntu", monospace;
+    font-family: "Ubuntu",sans-serif, monospace;
     font-size: 30px;
     grid-column: 2;
     height:180px;

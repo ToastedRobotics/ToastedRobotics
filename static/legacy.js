@@ -99,8 +99,4 @@ window.onload=function(){
         firebase.auth().signOut();
         window.parent.location.reload(true);
     })
-
-
-
-
 }
