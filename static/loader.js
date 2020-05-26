@@ -17,5 +17,5 @@ window.addEventListener('load', function loader(){
             console.timeEnd("Load Time");
         }
     }
-    setTimeout(checkLoadState, 100);
+    setTimeout(checkLoadState, 200);
 })
