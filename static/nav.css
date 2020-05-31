@@ -74,12 +74,12 @@ a{
   display:none;
 }
 @font-face {
-  font-family: 'zektonbo';
   font-display: swap;
+  font-family: 'zektonbo';
   src: url('../static/fonts/zektonbo.ttf');
 }
 @font-face {
-  font-family: 'Ubuntu';
   font-display: swap;
+  font-family: 'Ubuntu';
   src: url('../static/fonts/Ubuntu-Regular.ttf');
 }
