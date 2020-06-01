@@ -24,15 +24,15 @@
 <body>
 		<div class="navbar" id="nav">
 			<ul class="nav">
-				<li id="home" class="active"><a href="../index.html" style=" font-style:bold; font-family:'Sulphur Point', sans-serif;"><img src="../static/images/favicon.ico" height="50vh" width="50vh"></a></li>
-				<li id="home" style="padding-top:12px;"><a href="../index.html">Toasted Robotics</a></li>
+				<li id="home" class="active"><a href="../index.html" style="grid-column: 1;"><img src="../static/images/favicon.ico" style="height:5vh; width:5vh;"></a></li>
+				<div style="grid-column: 2; padding-left:1vh"><li id="home" style="padding-top:.8vh; position:sticky;"><a href="../index.html">Toasted Robotics</a></li></div>
 				<a href="javascript:void(0);" class="icon" onclick="myFunction()"><img src="https://cdn.discordapp.com/attachments/642547206275989527/665023672775606323/LcK7kdpki.png" width="20px" height="20px"></a>
 				<div id="mobile">
-					<div id="left">
-						<li id="mobile"><a href="../pages/about.html">About Us</a></li>
-						<li id="mobile"><a href="../pages/contact.html">Contact</a></li>	
-					</div>
 					<div id="right">
+						<div id="mobile" style="grid-column: 3; display: block;"><a href="../pages/about.html">About&nbsp;Us</a></div>
+						<div id="mobile" style="grid-column: 4; display: block;"><a href="../pages/contact.html">Contact</a></div>
+					</div>
+					<div id="left">
 						<!-- <button id="login-nav" style="margin-top: 18px; float:right; margin-right: 20%; background-color: white;" onclick="removeHide()">Account</button> -->
 					</div>
 				</div>
