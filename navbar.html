@@ -47,19 +47,7 @@
 				x.style.display = "block";
 			  }
 			}
-			function myAccount() {
-				window.location = "../pages/account.html"
-			}
-			const auth = firebase.auth();
-			const showAccount = document.getElementById("myAccount");
-			auth.onAuthStateChanged(user =>{
-				if(user){
-					showAccount.classList.remove("hide");
-				}
-				else{
-					showAccount.class.add("hide");
-				}
-			})
+			
 			function minimize(){
 				var nav = getElementById("nav");
 				if (document.body.scrollTop > 50){

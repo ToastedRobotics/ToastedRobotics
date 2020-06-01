@@ -8,9 +8,6 @@
     <link href="../static/portable.css" media="screen and (max-aspect-ratio: 5/6)" rel="stylesheet">
 	<link href="../static/desktop.css" media="screen and (min-aspect-ratio: 5/6)" rel="stylesheet">
     <link rel="shortcut icon" href="../static/images/favicon.ico">
-    <script src="https://www.gstatic.com/firebasejs/7.7.0/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/7.7.0/firebase-auth.js"></script>
-    <script src="../static/firebase.js"></script> 
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 	<script>
 		$(function(){
@@ -18,8 +15,6 @@
         $(".foot").load("../footer.html");
         });
     </script>
-    <script src="../static/legacy.js"></script>
-	<script src="../static/main.js"></script>
 	<script src="../static/loader.js"></script>
 </head>
 <body>
@@ -27,9 +22,6 @@
         <div id="preload"></div>
     </div>
     <div class="wrapper" id="wrapper" style="grid-template-rows: 120px 100px 3000px 1fr !important;">
-        <div id="login-modal" class="hide">
-            <iframe src="../login_legacy.html" frameBorder="0" id="frame" scrolling="no" width="100%" style="height:100%; width: 710px;"></iframe>
-        </div>
         <div id="page-mask" class="hide" onclick="removeHide()"></div>
 		<div class="navbar"></div>
 		<div style="grid-column: 2;"><h1 style="text-align: center; font-size: 50px; margin: 0 auto;">About Us</h1></div>
