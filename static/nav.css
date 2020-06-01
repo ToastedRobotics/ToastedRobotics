@@ -3,7 +3,7 @@ ul.nav {
 	list-style-type: none;
   margin: 0 auto;
 	overflow: hidden;
-	padding: 10px;
+	padding: 1vh;
 }
 li#home{
   float:left;
@@ -21,9 +21,9 @@ li#mobile a {
   color:rgb(255, 255, 255);
 	display: block;
   font-family: 'Ubuntu', sans-serif;
-  font-size: 18px;
+  font-size: 1.8vh;
   margin-top: 9px;
-	padding: 14px 20px;
+	padding: 1.4vh 2vh;
   text-align: center;
   text-decoration: none !important;
 }
@@ -33,7 +33,7 @@ li#home a {
   color:rgb(255, 255, 255);
 	/* display: block; */
   font-family: "Ubuntu",sans-serif;
-  font-size: 30px;
+  font-size: 3vh;
   font-weight: bold;
 	padding: 2px 10px;
   padding-top: 10px;
