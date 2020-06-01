@@ -98,14 +98,9 @@ body{
     position: relative;
     /* animation: movement 4s infinite; */
 }
-#floating > img{
-    /* position: relative;
-    animation: movement 3s infinite; */
-    max-width: 300px;
-    height: auto; 
-
-    margin-top:100px; 
-    /* box-shadow: 10px 10px 2px 1px rgba(0, 0, 0, 0.603); */
+#valuesH1{
+    border-bottom: 4px solid rgb(15, 136, 240);
+    display: inline;
 }
 @keyframes movement{
     0% {right:0px;top:0px;}
@@ -135,7 +130,7 @@ body{
     grid-template-columns: 1fr 1fr 1fr;
 }
 #footer > h3{
-    font-size: 16px;
+    font-size: 19px;
 }
 #footer{
     font-size: 14px;
