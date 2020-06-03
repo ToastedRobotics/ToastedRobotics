@@ -1,11 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Toasted Robotics | Contact</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Toasted Robotics</title>
+    <link href="../static/portable.css" media="screen and (max-aspect-ratio: 5/6)" rel="stylesheet">
+	<link href="../static/desktop.css" media="screen and (min-aspect-ratio: 5/6)" rel="stylesheet">
+    <link rel="shortcut icon" href="../static/images/favicon.ico">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+	<script>
+		$(function(){
+ 		$(".navbar").load("../navbar.html");
+        $(".foot").load("../footer.html");
+        });
+    </script>
+    <script src="../static/loader.js"></script>
 </head>
 <body>
-	
+    <div id="mask">
+        <div id="preload"></div>
+    </div>
+    <div class="wrapper" id="wrapper" style="grid-template-rows: 120px 100px auto auto !important">
+        <div id="page-mask" class="hide" onclick="removeHide()"></div>
+        <div class="navbar"></div>
+        <div style="grid-column: 2; height:20vmin;"><h1 style="text-align: center; font-size: 5vmin; margin: 0 auto;">Contact</h1></div>
+        <div class="content" style="grid-template-rows: .7fr 1.6fr !important;">
+            <div id="backgroundpic" style="grid-column: 1/3; grid-row: 1; z-index: 0; display: grid; grid-template-columns: 1fr 1fr; grid-template-rows: 2fr; background-image: url('../static/images/field.PNG'); background-repeat: no-repeat; background-position: center center; background-attachment: fixed; background-size: cover;">
+                <div style="grid-column: 1; grid-row: 1; color:white; background-color: rgba(85, 85, 85, 0.322);">
+                    <div id="competitive">
+                    </div>
+                </div>
+                <div style="grid-column: 2; grid-row: 1;background-color: rgba(85, 85, 85, 0.322); ">
+                </div>
+            </div>
+            <div style="grid-column: 1/3; grid-row: 2; grid-template-columns: 1fr 2fr 1fr; display: grid;">
+                <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSefn6k51sD0zAzTx9A_mtlrJfjKwMTngTlq17he7I1POwGVeg/viewform?embedded=true" frameborder="0" marginheight="0" marginwidth="0" style="padding-top: 9vmin; grid-column: 2; min-height: 1000px; min-width: 100%; height: auto; margin: 0 auto;">Loading…</iframe>
+            </div>
+        </div>
+        <div class="foot"></div>
+    </div>
 </body>
 </html>
