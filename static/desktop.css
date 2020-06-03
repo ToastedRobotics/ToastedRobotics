@@ -187,16 +187,22 @@ body{
     20% { opacity: 0;top:-100px;}
     100% { opacity: 1;top:0px;}
 }
-#login-modal{   
-    grid-column: 2;
-    grid-row: 3;
-    height:300px;
-    left:0;
-    position: absolute;
-    right:0;
-    top:350px;
-    width:100%;
-    z-index: 100;
+#about{
+    animation: rgb 5s;
+    animation-iteration-count: infinite;
+}
+@keyframes rgb{
+    0% {background-color: rgba(133, 255, 245, 0.2);}
+    10% {background-color: rgba(133, 206, 255, 0.2);}
+    20% {background-color: rgba(133, 255, 245, 0.2)}
+    30% {background-color: rgba(147, 255, 133, 0.2);}
+    40% {background-color: rgba(222, 255, 179, 0.2);}
+    50% {backgroun-color: rgba(255, 243, 133, 0.2);}
+    60% {background-color: rgba(255, 133, 133, 0.2);}
+    70% {backgroun-color: rgba(255, 243, 133, 0.2);}
+    80% {background-color: rgba(202, 255, 133, 0.2);}
+    90% {background-color: rgba(147, 255, 133, 0.2);}
+    100% {background-color: rgba(133, 255, 245, 0.2)}
 }
 input{
     border:none;
