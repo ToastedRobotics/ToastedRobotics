@@ -27,5 +27,6 @@ window.addEventListener('load', function loader(){
         }
     }
     setTimeout(checkLoadState, 200);
+    this.console.log(n);
     
 })
