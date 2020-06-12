@@ -54,3 +54,13 @@ li a:active {
 #social {
   float:right;
 }
+@font-face {
+  font-display: swap;
+  font-family: 'zektonbo';
+  src: url('../static/fonts/zektonbo.ttf');
+}
+@font-face {
+  font-display: swap;
+  font-family: 'Ubuntu';
+  src: url('../static/fonts/Ubuntu-Regular.ttf');
+}
