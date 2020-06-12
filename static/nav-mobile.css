@@ -3,7 +3,9 @@ ul.nav {
 	list-style-type: none;
   margin: 0 auto;
 	overflow: hidden;
-	padding: 10px;
+  padding: 1vh;
+  display: grid;
+  grid-template-columns: 18vw 60vw 18vw;
 }
 li#home{
   float:left;
@@ -15,14 +17,14 @@ li#home{
   list-style-type: none;
   margin: 0 auto;
 }
-li#mobile a {
+#mobile a {
   background-color:rgb(35, 39, 42);
 	color: rgb(163, 163, 163);
   color:rgb(255, 255, 255);
 	display: block;
   font-family: 'Ubuntu', sans-serif;
-  font-size: 20px;
-	padding: 14px 20px;
+  font-size: 15px;
+	padding: 10px 20px;
   padding-top: 10px;
   text-align: center;
   text-decoration: none !important;
@@ -33,7 +35,7 @@ li#home a {
   color:rgb(255, 255, 255);
 	display: block;
   font-family: 'Ubuntu', sans-serif;
-  font-size: 20px;
+  font-size: 25px;
 	padding: 2px 10px;
   padding-top: 10px;
   text-align: center;
@@ -49,7 +51,9 @@ li a:active {
 	background-color: white;
 }
 .icon{
-  display:none;
+  display:block;
+  padding: 20px;
+  filter: invert(100%);
 }
 #social {
   float:right;
