@@ -18,7 +18,7 @@ li#home{
 li#mobile a {
   background-color:rgb(35, 39, 42);
 	color: rgb(163, 163, 163);
-  color:black;
+  color:rgb(255, 255, 255);
 	display: block;
   font-family: 'Ubuntu', sans-serif;
   font-size: 20px;
@@ -30,7 +30,7 @@ li#mobile a {
 li#home a {
   background-color:rgb(35, 39, 42);
 	color: rgb(163, 163, 163);
-  color:black;
+  color:rgb(255, 255, 255);
 	display: block;
   font-family: 'Ubuntu', sans-serif;
   font-size: 20px;
