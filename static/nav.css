@@ -1,11 +1,11 @@
 ul.nav {
   background-color: rgb(35, 39, 42);
+  display: grid;
+  grid-template-columns: 6vh 33vh 3fr;
 	list-style-type: none;
   margin: 0 auto;
 	overflow: hidden;
   padding: 1vh;
-  display: grid;
-  grid-template-columns: 6vh 33vh 3fr;
 }
 li#home{
   float:left;
@@ -70,9 +70,9 @@ div#mobile{
   grid-column: 1;
 }
 #right{
+  display: grid;
   float:right;
   grid-column: 3;
-  display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 10px;
 }
 a{

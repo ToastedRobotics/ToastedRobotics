@@ -16,7 +16,23 @@
         });
     </script>
     <script src="../static/loader.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.3/particles.min.js"></script>
+    <script src="../static/enquire.js"></script>
+    <script>
+        function loadJS(url){
+            // adding the script tag to the head
+            var head = document.getElementsByTagName('head')[0];
+            var script = document.createElement('script');
+            script.type = 'text/javascript';
+            script.src = url;
+            // fire the loading
+            head.appendChild(script);
+        }
+        enquire.register("screen and (min-aspect-ratio: 5/6)", {
+            match : function() {
+                loadJS('https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.3/particles.min.js');
+            }
+        }).listen();
+    </script>
 </head>
 <body>
     <div id="mask" style="z-index: 3 !important;">
@@ -25,45 +41,45 @@
     <div class="wrapper" id="wrapper" style="grid-template-rows: 120px 100px auto auto !important">
         <div id="page-mask" class="hide" onclick="removeHide()"></div>
         <div class="navbar" style="z-index: 2;"></div>
-        <div class="container" style="grid-row: 1/3; grid-column: 1/4;">
+        <div class="container">
             <canvas class="particle"></canvas>
         </div>
-		<div style="grid-row: 2; grid-column: 2; height:100%; z-index: 1;"><h1 id="about" style="display: inline; text-align: center; font-size: 5vmin; margin: 0 auto;">&nbsp;&nbsp;About Us&nbsp;&nbsp;</h1></div>
+        <div style="grid-row: 2; grid-column: 2; height:100%; z-index: 1;">
+            <h1 id="about">&nbsp;&nbsp;About Us&nbsp;&nbsp;</h1>
+        </div>
         <div class="content" style="grid-template-rows: 1fr 1.5fr 1fr 3fr !important;">
-            <div id="backgroundpic" style="grid-column: 1/3; grid-row: 1; z-index: 0; display: grid; grid-template-columns: 1fr 1fr; grid-template-rows: 2fr; background-image: url('../static/images/with 221w.jpg'); background-repeat: no-repeat; background-position: top center; background-attachment: scroll; background-size: cover; border-top: 2px solid rgb(35, 39, 42); border-bottom: 2px solid rgb(35, 39, 42);">
+            <div id="backgroundpic2">
                 <div style="grid-column: 1; grid-row: 1; color:white; background-color: rgba(85, 85, 85, 0.322);">
-                    <div id="competitive">
-                        <h2 style="padding-left: 25%; padding-top: 450px; font-size: 20px; text-shadow: 5px 5px 2px#3f3f3fa6; text-align: left;">2405T (3388A)</h2>
+                    <div id="team2405">
+                        <h2>2405T (3388A)</h2>
                     </div>
                 </div>
-                <div style="grid-column: 2; grid-row: 1;background-color: rgba(85, 85, 85, 0.322); ">
-                    <h2 style="padding-right: 25%; padding-top: 450px; font-size: 20px; text-shadow: 5px 5px 2px#3f3f3fa6; text-align: right; color:white;">221W (Alliance Partner)</h2>
+                <div id="team221">
+                    <h2>221W (Alliance Partner)</h2>
                 </div>
             </div>
-            
-            <div style="grid-column: 1/3; grid-row: 2; grid-template-columns: 1fr 3fr 1fr; display: grid; grid-template-rows: 1fr 1fr;">
-                <div style="grid-column: 2/3; grid-row: 1/3; display: grid; grid-template-columns: 3fr 1fr 2fr;">
-                    <p style="grid-column:1; padding-top: 8vh; text-align: left; color: rgb(35, 39, 42); font-size: 2.46vh; text-indent: 2em;">Toasted Robotics (2405T) is a high performance, Calgary-based VRC team.  Our team consists of six 10th grade students from Sir Winston Churchill High School.  Formed in 2019 under the team number 3388A, Our team was based on the need for higher performance and greater opportunities, which were not readily achievable at our previous organization.  This year, we plan on ranking top 3 in Alberta and qualifying for the World Championships.  In addition to this, we are aiming to place in the top 100 worldwide in combined skills.  We plan on attending tournaments in Alberta and BC.  Overall, we plan on becoming a VRC oriented organization based in Alberta which will help to mentor and provide resources for younger students interested in STEM and robotics.</p>
+            <div id="aR1">
+                <div id="aR1C1">
+                    <p>Toasted Robotics (2405T) is a high performance, Calgary-based VRC team.  Our team consists of six 10th grade students from Sir Winston Churchill High School.  Formed in 2019 under the team number 3388A, Our team was based on the need for higher performance and greater opportunities, which were not readily achievable at our previous organization.  This year, we plan on ranking top 3 in Alberta and qualifying for the World Championships.  In addition to this, we are aiming to place in the top 100 worldwide in combined skills.  We plan on attending tournaments in Alberta and BC.  Overall, we plan on becoming a VRC oriented organization based in Alberta which will help to mentor and provide resources for younger students interested in STEM and robotics.</p>
                     <div style="grid-column:3;">
                         <img src="../static/images/3388a and 3388f.png" style="max-width:100%; height:auto; margin-top: 10vh; border: 10px solid rgb(35, 39, 42);">
                         <p style="font-size: 2vh;">2405T(3388A) with 3388F</p>
                     </div>
                 </div>
             </div>
-            
-            <div style="color: white; grid-column: 1/3; background-attachment: fixed; background-image: url('../static/images/Scouting.jpg'); background-repeat: no-repeat; background-position: center center; background-size: cover;  grid-template-columns: 1fr 2fr 2fr 2fr 1fr; display: grid; grid-template-rows: 1fr 1fr 1fr 1fr;">
-                <div style="padding-left: 1.5vw; grid-column: 2/4; grid-row: 2; border-radius: 3.8vmin; background: linear-gradient(to right, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0)); margin-bottom: 1vmin;">
+            <div id="aR2">
+                <div id="aR2C1">
                     <h3 style="text-align: left; font-size: 4vmin; margin: 0 auto; padding-top: 2.5vmin;">Mission</h3>
                     <p style="text-align: left; font-size: 2vmin; margin:0 auto;">We provide young Canadians with opportunities to excel in the STEM field through the VEX platform.</p>
                 </div>
-                <div style="padding-left: 5vw; grid-column: 3/5; grid-row: 3/5; border-radius: 3.8vmin;background: linear-gradient(to left, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0)); margin-top: 4vmin; margin-bottom: 9vmin;">
+                <div id="aR2C2">
                     <h3 style="text-align: left; font-size: 4vmin; margin: 0 auto; padding-top: 2vmin;">Vision</h3>
                     <p style="text-align: left; font-size: 2vmin; margin:0 auto;">To be a significant organization in the VEX community which provides exemplary robotics education to the Greater Calgary region, and empowers Canadians of all backgrounds.</p>
                 </div>
             </div>
-            <div style="grid-column: 1/3; grid-row: 4; display: grid; grid-template-columns: 1fr 1fr 1fr 1fr 1fr; grid-template-rows: 150px 100px 3fr 100px;  color:rgb(35, 39, 42); font-size: 1.7vmin;">
+            <div id="aR3">
                 <h1 style="text-align: center; padding: 1vmin; font-size: 4.5vmin; border: 1vmin solid rgb(8, 8, 8); grid-column: 3/4; grid-row: 1; color: rgb(255, 255, 255); background-color: rgb(35, 39, 42);">Our Values</h1>
-                <div style="grid-column: 2/5; grid-row: 3; display:grid; grid-template-rows: 1fr 1fr 1fr 1fr 1fr; grid-template-columns: 2fr 1fr 2fr;">
+                <div id="aR3C1">
                     <div style="grid-row: 1; grid-column: 1; text-align: left;">
                         <h1 id="valuesH1">&nbsp;&nbsp;COMMUNITY&nbsp;&nbsp;</h1>
                         <p>We strive to give back and our community (Calgary and surrounding area) and to pass knowledge forward.  This is usually in the form of volunteering, tips and suggestions both in-person and online (Discord and Instagram), the publishing of mechanisms, and through our involvement in the creation of strategies and designs in the VEX community.</p>

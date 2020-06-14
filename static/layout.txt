@@ -1,0 +1,2 @@
+Website layout:
+ID: After the CONTENT div, divs are named [first letter of page][Row, number][Column, number (nested)] for example aR1C1 means [about][row 1][nested div column 1].

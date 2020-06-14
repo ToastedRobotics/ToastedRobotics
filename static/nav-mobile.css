@@ -1,11 +1,11 @@
 ul.nav {
   background-color: rgb(35, 39, 42);
+  display: grid;
+  grid-template-columns: 18vw 60vw 18vw;
 	list-style-type: none;
   margin: 0 auto;
 	overflow: hidden;
   padding: 1vh;
-  display: grid;
-  grid-template-columns: 18vw 60vw 18vw;
 }
 li#home{
   float:left;
@@ -55,8 +55,8 @@ li a:active {
 }
 .icon{
   display:block;
-  padding: 20px;
   filter: invert(100%);
+  padding: 20px;
 }
 #social {
   float:right;

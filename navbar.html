@@ -26,7 +26,7 @@
 			<ul class="nav">
 				<li id="home" class="active"><a href="../index.html" style="grid-column: 1;"><img src="../static/images/favicon.ico" style="height:5vh; width:5vh;"></a></li>
 				<div style="grid-column: 2; padding-left:1vh"><li id="home" style="padding-top:.8vh; position:sticky;"><a href="../index.html">Toasted Robotics</a></li></div>
-				<a href="javascript:void(0);" class="icon" onclick="showNav()"><img src="https://cdn.discordapp.com/attachments/642547206275989527/665023672775606323/LcK7kdpki.png" width="20px" height="20px"></a>
+				<a href="javascript:void(0);" class="icon" onclick="showNav()"><img id="maximize" src="https://cdn.discordapp.com/attachments/642547206275989527/665023672775606323/LcK7kdpki.png" width="20px" height="20px"><img id="minimize" class="hide" src="../static/images/minus.png" width="20px" height="20px"></a>
 				<div id="mobile">
 					<div id="right">
 						<div id="mobile" style="grid-column: 3; display: block;"><a href="../pages/about.html">About&nbsp;Us</a></div>
@@ -42,12 +42,18 @@
 			function showNav() {
 			  var x = document.getElementById("mobile");
 			  var nav = document.getElementById("navbar");
+			  var max = document.getElementById("maximize");
+			  var min = document.getElementById("minimize");
 			  if (x.style.display === "block") {
 				x.style.display = "none";
 				nav.style.zIndex = "0";
+				max.classList.remove("hide");
+				min.classList.add("hide");
 			  } else {
 				x.style.display = "block";
 				nav.style.zIndex ="2";
+				min.classList.remove("hide");
+				max.classList.add("hide");
 			  }
 			}
 			

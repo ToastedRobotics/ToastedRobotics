@@ -204,7 +204,7 @@ body{
     90% {background-color: rgba(147, 255, 133, 0.2);}
     100% {background-color: rgba(133, 255, 245, 0.2)}
 }
-.container {
+/* .container {
     max-width: 100%;
     max-height: 250px;
     margin: 0 auto;
@@ -212,11 +212,13 @@ body{
     background-color: #fff;
     box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.06), 0 1px 0 0 rgba(0, 0, 0, 0.02);
     overflow: hidden;
+    height: 0 !important;
+    width: 0 !important;
 }
 .particle{
     height: 0 !important;
     width: 0 !important;
-}
+} */
 input{
     border:none;
     border-bottom: 2px solid rgba(98, 166, 255, 0.801);
