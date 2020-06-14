@@ -12,6 +12,9 @@ li#home{
   list-style-type: none;
   margin: 0 auto;
 }
+#mobile {
+  display: none; grid-column: 1/4;
+}
 #mobile > li {
   float: left;
   list-style-type: none;

@@ -13,6 +13,9 @@ li#home{
   margin: 0 auto;
   padding:0;
 }
+#mobile {
+  display: grid;
+}
 li#mobile {
   float: left;
   list-style-type: none;
