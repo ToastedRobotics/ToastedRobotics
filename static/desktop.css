@@ -129,13 +129,12 @@ body{
     grid-template-columns: 1fr 1fr 1fr;
 }
 #footer > h3{
-    font-size: 19px;
+    font-size: 2vmin;
 }
 #footer{
-    font-size: 14px;
+    font-size: 1.5vmin;
     margin: 0 auto;
 }
-
 
 
 
@@ -165,7 +164,7 @@ body{
 #competitive > h2{
     padding-left: 10%;
     padding-top: 130px; 
-    font-size: 45px; 
+    font-size: 4.5vmin; 
     text-shadow: 5px 5px 2px#3f3f3fa6; 
     text-align: left;
 }
@@ -177,7 +176,7 @@ body{
 #awards > h2{
     padding-right: 10%; 
     padding-top: 130px; 
-    font-size: 37px; 
+    font-size: 3.7vmin; 
     text-shadow: 5px 5px 2px#3f3f3fa6; 
     text-align: right; 
     color:white;
@@ -221,7 +220,7 @@ body{
     z-index: 1;
 }
 #textlogoname{
-    margin:2vh;
+    margin:2vmin;
 }
 @keyframes dropdown{
     0% { opacity: 0;top:-100px;}
