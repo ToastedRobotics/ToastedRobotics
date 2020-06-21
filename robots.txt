@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /navbar.html
+Disallow: /static/
+Allow: /static/images
