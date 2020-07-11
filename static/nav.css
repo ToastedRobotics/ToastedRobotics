@@ -33,6 +33,15 @@ li#mobile {
   text-align: center;
   text-decoration: none !important;
 }
+.dropdown{
+  display: none;
+  position: absolute;
+  background-color:white;
+
+}
+.about:hover .dropdown{
+  display: block;
+}
 li#home a {
   background-color:rgb(35, 39, 42);
 	color: rgb(163, 163, 163);
