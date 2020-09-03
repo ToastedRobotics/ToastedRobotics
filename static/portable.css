@@ -22,7 +22,7 @@ body{
 #preload {
     -webkit-animation: flash 1.5s linear infinite;
     animation: flash 1.5s linear infinite;
-    background-image: url("../static/images/logo.svg");
+    background-image: url("../static/images/logo_curve.svg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: 50%;
