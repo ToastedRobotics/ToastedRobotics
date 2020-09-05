@@ -454,7 +454,7 @@ body{
     z-index: 0;
 }
 .contact_mobile{
-    grid-template-rows: 1fr 1.6fr !important;
+    grid-template-rows: .5fr 1.6fr !important;
 }
 #contact_container{
     background-color: rgba(85, 85, 85, 0.322);
