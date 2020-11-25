@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -109,4 +110,117 @@
         <div class="foot"></div>
     </div>
 </body>
+=======
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Toasted Robotics</title>
+    <meta property="og:site_name" content="Toasted Robotics">
+    <meta property="og:url" content="https://toastedrobotics.github.io">
+    <meta property="og:title" content="Toasted Robotics | Home">
+    <meta property="og:description" content="Toasted Robotics (2405T) is a high performance, Calgary-based VRC team. Our team consists of six 10th grade students from Sir Winston Churchill High School.">
+    <meta property="og:type" content="website">
+    <meta name="og:image" itemprop="image" content="https://cdn.discordapp.com/attachments/704131461904859227/722229352317583400/toasted_logo_curved.png">
+    <meta name="keywords" content="Toasted Robotics, 2405T, VEX, VRC, SWC, Sir Winston Churchill, Calgary, Robotics">
+    <link href="../static/portable.css" media="screen and (max-aspect-ratio: 5/6)" rel="stylesheet">
+	<link href="../static/desktop.css" media="screen and (min-aspect-ratio: 5/6)" rel="stylesheet">
+    <link rel="shortcut icon" href="../static/images/toasted_curved.png">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+	<script>
+		$(function(){
+ 		$(".navbar").load("../navbar.html");
+        $(".foot").load("../footer.html");
+        });
+    </script>
+    <script>
+        function enableScrollBars() {
+            document.documentElement.style.overflow = 'auto';
+            document.body.scroll = "yes";
+        }
+        function disableScrollBars() {
+            document.documentElement.style.overflow = 'hidden';
+            document.body.scroll = "no";
+        }
+        window.addEventListener('load', function loader(){
+            disableScrollBars();
+            console.log("loaded");
+            console.time("Load Time");
+            const preload = document.getElementById("preload");
+            const mask = document.getElementById("mask");
+            const wrapper = document.getElementById("wrapper");
+            function checkLoadState(){
+                if(document.readyState === "complete"){
+                    preload.classList.add("hide");
+                    mask.classList.add("displayup");
+                    setTimeout(hideMask,500);
+                    function hideMask(){
+                        mask.classList.add("hide");
+                    }
+                    enableScrollBars();
+                    console.log("complete")
+                    console.timeEnd("Load Time");
+             }
+            }
+            setTimeout(checkLoadState, 500);
+        })
+    </script>
+</head>
+<body>
+    <div id="mask">
+        <div id="preload"></div>
+    </div>
+    <div class="wrapper" id="wrapper">
+        <div id="page-mask" class="hide" onclick="removeHide()"></div>
+        <div class="navbar" id="navbar"></div>
+        <div class="welcome">
+            <div id="textlogo">
+                <h1 id="textlogoname">Toasted Robotics</h1>
+            </div>
+        </div>
+        <div class="content mobilehome">
+            <div id="backgroundpic">
+                <div style="grid-column: 1; grid-row: 1; color:white; background-color: rgba(85, 85, 85, 0.322);">
+                    <div id="competitive">
+                        <h2>Competitive<br> High School<br> VRC Robotics Team</h2>
+                    </div>
+                </div>
+                <div id="awards">
+                    <h2>Excellence (x)<br>Design (x)<br>Tournament Champ (x)</h2>
+                    <p style="text-align: right; padding-right: 10%; color:white; margin:0 auto;">x = placeholder</p>
+                </div>
+            </div>
+            <div id="hR1">
+                <div id="hR1C1">
+                    <h3 style="grid-column: 2; grid-row: 1;">Donations</h3>
+                    <h1 style="grid-column: 2; grid-row: 2;">Please support us by donating!</h1>
+                    <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top" style="grid-column: 2; grid-row: 2; padding-top: 12vmin; margin: 0 auto; border-bottom: none;">
+                        <input type="hidden" name="cmd" value="_donations" />
+                        <input type="hidden" name="business" value="VFFKSK5RMVYTS" />
+                        <input type="hidden" name="item_name" value="Toasted Robotics Donations" />
+                        <input type="hidden" name="currency_code" value="CAD" />
+                        <button name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" style="border-bottom: none !important; border-radius: 2px; height: 6vmin; width: 16vmin; font-size: 1.4vmin; font-family: 'ubuntu', sans-serif; background-color: rgb(255, 217, 0);">Donate with Paypal</button>
+                        <img alt="" border="0" src="https://www.paypal.com/en_CA/i/scr/pixel.gif" width="1" height="1" />
+                    </form>
+                    <!-- <div style="grid-column: 2; grid-row: 2;" class="gfm-embed" data-url="https://www.gofundme.com/f/help-support-vex-team-2405t/widget/medium/"></div><script defer src="https://www.gofundme.com/static/js/embed.js"></script> -->
+                </div>
+                <div id="hR1C2">
+                    <h3>This Season</h3>
+                    <iframe src="https://www.youtube.com/embed/GlxGdI1bA8Q" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="margin: 0 auto; margin-top: 13vmin ; max-width:512px; height:315px; min-width: 55%;"></iframe>
+                </div>
+            </div>
+            <div id="hR2">
+                <h1 id="hR2Desktop">WHAT IS VEX?</h1>
+                <h1 id="hR2Mobile" style="margin-top: 50vmin;">WHAT</h1>
+                <h1 id="hR2Mobile" style="font-size: 60vmin !important;">IS</h1>
+                <h1 id="hR2Mobile" style="margin-top: 5vmin; font-size: 28vmin !important;">VEX?</h1>
+            </div>
+            <div id="hR3"></div>
+        </div>
+        <div class="foot"></div>
+    </div>
+</body>
+>>>>>>> ac7d6bf8d221274ab9c061c92138e4b653689e48
 </html>
