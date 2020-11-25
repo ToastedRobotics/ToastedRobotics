@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!doctype html>
 <html>
 <head>
@@ -81,4 +82,89 @@
 			};
 		</script>
 </body>
+=======
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Toasted Robotics</title>
+	<meta property="og:site_name" content="Toasted Robotics">
+    <meta property="og:url" content="https://toastedrobotics.github.io">
+    <meta property="og:title" content="Toasted Robotics">
+    <meta property="og:description" content="Toasted Robotics (2405T) is a high performance, Calgary-based VRC team. Our team consists of six 10th grade students from Sir Winston Churchill High School.">
+    <meta property="og:type" content="website">
+    <meta name="og:image" itemprop="image" content="https://cdn.discordapp.com/attachments/704131461904859227/722229352317583400/toasted_logo_curved.png">
+	<meta name='robots' content='noindex,nofollow' />
+	<link href="../static/nav-mobile.css" media="screen and (max-aspect-ratio: 5/6)" rel="stylesheet">
+	<link href="../static/nav.css" media="screen and (min-aspect-ratio: 5/6)" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Sulphur+Point&display=swap" rel="stylesheet">
+	<!-- <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet"> -->
+	<link href="https://fonts.googleapis.com/css2?family=Geo&display=swap" rel="stylesheet">
+	<link rel="shortcut icon" href="../static/images/toasted_curved.png">
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-167500695-1"></script>
+	<script>
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+
+	gtag('config', 'UA-167500695-1');
+	</script>
+
+</head>
+<body>
+		<div class="navbar" id="nav">
+			<ul class="nav">
+				<li id="home" class="active"><a href="../index.html" style="grid-column: 1;"><img src="../static/images/toasted_curved.png" style="height:5vh; width:5vh;"></a></li>
+				<div style="grid-column: 2; padding-left:1vh"><li id="home" style="padding-top:.8vh; position:sticky;"><a href="../index.html">Toasted Robotics</a></li></div>
+				<!-- <div style="grid-column: 3; padding-left:1vh"><li id="home" style="padding-top:.8vh; position:sticky;"><a href="../index.html">NEO Robotics</a></li></div> -->
+				<a href="javascript:void(0);" class="icon" onclick="showNav()"><img id="maximize" src="https://cdn.discordapp.com/attachments/642547206275989527/665023672775606323/LcK7kdpki.png" width="20px" height="20px"><img id="minimize" class="hide" src="../static/images/minus.png" width="20px" height="20px"></a>
+				<div id="mobile">
+					<div id="right">
+						<div id="mobile" class="about" style="grid-column: 3; display: block;"><a href="../pages/about.html">About&nbsp;Us</a>
+							<div class="dropdown">
+								<a href="../pages/2405t.html">2405T</a>
+								<a href="../pages/sponsors.html">Our sponsors</a>
+							</div>
+						</div>
+						<div id="mobile" style="grid-column: 4; display: block;"><a href="../pages/contact.html">Contact</a></div>
+					</div>
+					<div id="left">
+						<!-- <button id="login-nav" style="margin-top: 18px; float:right; margin-right: 20%; background-color: white;" onclick="removeHide()">Account</button> -->
+					</div>
+				</div>
+			</ul> 
+		</div>
+		<script>
+			function showNav() {
+			  var x = document.getElementById("mobile");
+			  var nav = document.getElementById("navbar");
+			  var max = document.getElementById("maximize");
+			  var min = document.getElementById("minimize");
+			  if (x.style.display === "block") {
+				x.style.display = "none";
+				nav.style.zIndex = "0";
+				max.classList.remove("hide");
+				min.classList.add("hide");
+			  } else {
+				x.style.display = "block";
+				nav.style.zIndex ="2";
+				min.classList.remove("hide");
+				max.classList.add("hide");
+			  }
+			}
+			
+			function minimize(){
+				var nav = getElementById("nav");
+				if (document.body.scrollTop > 50){
+					nav.class.add("minimize");
+				}
+			}
+			object.onscroll = function(){
+
+			};
+		</script>
+</body>
+>>>>>>> ac7d6bf8d221274ab9c061c92138e4b653689e48
 </html>
